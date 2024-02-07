@@ -1,7 +1,18 @@
-import React from "react";
+import React from 'react';
+import { Carousel } from '@/components/ui/carousel';
 
-const Carousel = () => {
-  return <div>Carousel</div>;
+interface CarouselComponentProps {
+  images: string[];
+}
+
+const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
+  return (
+    <Carousel>
+      {images.map((image, index) => (
+        <img key={index} src={image} alt={`carousel-item-${index}`} />
+      ))}
+    </Carousel>
+  );
 };
 
-export default Carousel;
+export default CarouselComponent;
