@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #22272b;
+      }
+
+      .cls-3, .cls-5 {
+        font-size: 72px;
+      }
+
+      .cls-3, .cls-6 {
+        font-family: Sligoil-Micro, Sligoil;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: CHANEY-Wide, CHANEY;
+      }
+
+      .cls-4, .cls-6 {
+        font-size: 96px;
+      }
+
+      .cls-7 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <text class="cls-4" transform="translate(27.19 595.9)"><tspan x="0" y="0">C</tspan><tspan class="cls-7" x="92.16" y="0">H</tspan><tspan x="182.88" y="0">ANEY w</tspan><tspan class="cls-2" x="683.32" y="0">I</tspan><tspan x="715" y="0">DE</tspan></text>
+  <text class="cls-6" transform="translate(27.19 129.65)"><tspan x="0" y="0">Sligoil Micro</tspan></text>
+  <text class="cls-5" transform="translate(27.19 718.82)"><tspan x="0" y="0">Header </tspan><tspan class="cls-1" x="399.24" y="0">f</tspan><tspan x="454.89" y="0">ont</tspan></text>
+  <text class="cls-3" transform="translate(27.19 252.57)"><tspan x="0" y="0">Paragraph font</tspan></text>
+</svg>
