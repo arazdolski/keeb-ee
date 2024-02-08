@@ -16,6 +16,16 @@
   }
 }
 
+@font-face {
+  font-family: "Sligoil-micro"; /* Define the custom font name */
+  src: url("/public/fonts/Sligoil-Micro.woff2") format("woff2"); /* Point to the font file in your project */
+}
+
+@font-face {
+  font-family: "Chaney-ultra"; /* Define the second custom font name */
+  src: url("/public/fonts/chaney-ultraextended-webfont.woff2") format("woff2"); /* Point to the second font file in your project */
+}
+
 body {
   color: rgb(34, 39, 43);
   padding: 1rem;
