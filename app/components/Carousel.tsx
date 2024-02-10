@@ -1,6 +1,8 @@
+'use client';
 import * as React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 import {
-  Carousel,
+  Carousel as UICarousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
@@ -12,26 +14,35 @@ interface CarouselComponentProps {
 }
 
 const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
+  const plugin = React.useRef(
+    Autoplay({ delay: 5000, stopOnInteraction: true })
+  );
+
   return (
-    <Carousel className='w-full max-w-xs'>
-      <CarouselContent>
-        {images.map((image, index) => (
-          <CarouselItem key={index}>
-            <div className='p-1'>
+    <div className='flex justify-center items-center'>
+      <UICarousel
+        plugins={[plugin.current]}
+        onMouseEnter={plugin.current.stop}
+        onMouseLeave={plugin.current.reset}
+      >
+        <CarouselContent>
+          {images.map((image, index) => (
+            <CarouselItem
+              key={index}
+              className='md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-64 object-cover'
+            >
               <img
                 src={image}
                 alt={`carousel-item-${index}`}
-                className='object-cover '
-                width={1200} // increase the width
-                height={1200} // increase the height
+                className='size-2/4 h-auto object-fit'
               />
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </UICarousel>
+    </div>
   );
 };
 

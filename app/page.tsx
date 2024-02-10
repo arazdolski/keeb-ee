@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Navbar from './components/Navbar';
 import Section from './components/Section';
 import Footer from './components/Footer';
-import CarouselComponent from './components/Carousel'; // adjust the path as needed
+import Carousel from './components/Carousel';
 
 export default function Home() {
   const images = [
@@ -56,10 +56,10 @@ export default function Home() {
         </Section>
 
         <Section heading='Keebs we have built'>
-          <CarouselComponent images={images} />
+          <Carousel images={images} />
         </Section>
         <Section heading='Meet-ups we have had'>
-          <CarouselComponent images={images} />
+          <Carousel images={images} />
         </Section>
         <Footer
           imageUrl='/logos/Illustration-PEACE.svg'
