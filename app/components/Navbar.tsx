@@ -15,10 +15,10 @@ const Navbar: React.FC = () => {
                     Welcome to
                   </p>
                   <Image
-                    src='/keeb-logo-horizontal-void.svg'
+                    src='/Keeb-logo-Horizontal-VOID.svg'
                     width={250}
                     height={250}
-                    alt='Picture of the author'
+                    alt='keeb.ee logo'
                   />
                 </div>
               </Link>
