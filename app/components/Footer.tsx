@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface FooterProps {
   logoUrl: string;
@@ -15,17 +16,29 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, innerLogoUrl, imageUrl }) => {
           <br />
           Cheers!
         </p>
-        {imageUrl && <img src={imageUrl} alt='Peace sign' />}
+
+        {imageUrl && (
+          <Image width={100} height={100} src={imageUrl} alt='Peace sign' />
+        )}
       </div>
-      <div className='relative ml-4 fixed'>
-        <img src={logoUrl} alt='logo' className='h-40 w-40 slow-spin' />
+      <div className='relative ml-4 '>
+        <Image
+          width={1200}
+          height={800}
+          src={logoUrl}
+          alt='logo'
+          className='h-40 w-40 slow-spin'
+        />
         <a
           href='https://discord.gg/nax9Trt6zg'
           target='_blank'
+          title='Join our keeb.ee Discord server'
           rel='noopener noreferrer'
         >
-          <img
+          <Image
             src={innerLogoUrl}
+            width={1200}
+            height={800}
             alt='inner logo'
             className='absolute h-36 w-36 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
           />

@@ -5,9 +5,8 @@ import {
   Carousel as UICarousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel';
+import Image from 'next/image';
 
 interface CarouselComponentProps {
   images: string[];
@@ -30,10 +29,12 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
               key={index}
               className='flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full'
             >
-              <img
+              <Image
                 src={image}
                 alt={`carousel-item-${index}`}
                 className='w-3/4 h-1/2 sm:w-1/2'
+                width={1200}
+                height={800}
               />
             </CarouselItem>
           ))}

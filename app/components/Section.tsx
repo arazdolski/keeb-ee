@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface SectionProps {
   heading: string;
@@ -25,9 +26,11 @@ const Section: React.FC<SectionProps> = ({
         }`}
       >
         {imageSrc && (
-          <img
+          <Image
             src={imageSrc}
             alt=''
+            width={1200}
+            height={800}
             className='w-24 h-24 md:w-32 md:h-32 object-cover mx-auto md:mx-0 md:ml-8 md:mr-8'
           />
         )}
