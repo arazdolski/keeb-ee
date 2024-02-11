@@ -1,12 +1,12 @@
-"use client";
-import * as React from "react";
-import Autoplay from "embla-carousel-autoplay";
+'use client';
+import * as React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 import {
   Carousel as UICarousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import Image from "next/image";
+} from '@/components/ui/carousel';
+import Image from 'next/image';
 
 interface CarouselComponentProps {
   images: { src: string; alt: string }[];
@@ -18,7 +18,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
   );
 
   return (
-    <div className="flex justify-center items-center">
+    <div className='flex justify-center items-center'>
       <UICarousel
         plugins={[plugin.current]}
         onMouseLeave={plugin.current.reset}
@@ -27,14 +27,13 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className="flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full"
+              className='flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full '
             >
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-3/4 h-1/2 sm:w-1/2"
-                width={1200}
-                height={800}
+                width={1000}
+                height={600}
               />
             </CarouselItem>
           ))}
