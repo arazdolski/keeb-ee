@@ -17,8 +17,8 @@ export default function Home() {
               <p className='m-auto p-4  pb-2 pl-2 text-xl sm:text-2xl md:text-2xl lg:text-2xl  md:w-full'>
                 Our community revolves around a passion for mechanical
                 keyboards. <br />
-                We build, share, design keebs, but it's mostly to make friends
-                and goof around. <br />
+                We build, share, design keebs, but it&apos;s mostly to make
+                friends and goof around. <br />
                 Each of us has a unique vision for how a keyboard should look
                 and feel.
                 <br />
@@ -42,14 +42,14 @@ export default function Home() {
         </Section>
 
         <Section
-          heading='Keebs we have built'
+          heading="Keebs we've built"
           imageSrc='/Illustration-PRESENTING.svg'
           imageSide='left'
         >
           <Carousel images={boardImages} />
         </Section>
         <Section
-          heading='Meet-ups we have had'
+          heading="Meet-ups we've had"
           imageSrc='/Illustration-OK.svg'
           imageSide='right'
         >
