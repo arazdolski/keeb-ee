@@ -15,32 +15,29 @@ interface CarouselComponentProps {
 
 const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+    Autoplay({ delay: 3000, stopOnInteraction: true })
   );
 
   return (
     <div className='flex justify-center items-center'>
       <UICarousel
         plugins={[plugin.current]}
-        onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
         <CarouselContent>
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className='md:w-1/2 lg:w-1/3 xl:w-1/4 2xl:w-1/5 h-64 object-cover'
+              className='flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full'
             >
               <img
                 src={image}
                 alt={`carousel-item-${index}`}
-                className='size-2/4 h-auto object-fit'
+                className='w-3/4 h-1/2 sm:w-1/2'
               />
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </UICarousel>
     </div>
   );
