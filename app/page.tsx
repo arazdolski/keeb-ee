@@ -11,10 +11,10 @@ export default function Home() {
     <main>
       <header>
         <Navbar></Navbar>
-        <div className='relative flex items-center justify-center md:h-svh h-auto flex-col md:flex-row md:pt-0 pt-4'>
-          <div className='md:absolute  h-auto flex items-center justify-start'>
-            <div className='text-left  md:w-1/2 m-auto'>
-              <p className='pt-8 pb-2 pl-2 text-xl sm:text-2xl md:text-3xl lg:text-4xl'>
+        <div className=' flex items-center justify-center h-auto flex-col md:flex-row md:pt-8 pt-4 pb-8'>
+          <div className=' h-auto flex items-center justify-start'>
+            <div className='text-left md:w-1/2 m-auto'>
+              <p className='m-auto p-4  pb-2 pl-2 text-xl sm:text-2xl md:text-2xl lg:text-2xl  md:w-full'>
                 Our community revolves around a passion for mechanical
                 keyboards. <br />
                 We build, share, design keebs, but it's mostly to make friends
@@ -28,7 +28,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Section heading='Upcoming events'>
+        <Section
+          heading='Upcoming events'
+          imageSrc='/Illustration-CLAP.svg'
+          imageSide='right'
+        >
           <Image
             src='/Keebuary-banner.png'
             width={1200}
@@ -37,16 +41,24 @@ export default function Home() {
           />
         </Section>
 
-        <Section heading='Keebs we have built'>
+        <Section
+          heading='Keebs we have built'
+          imageSrc='/Illustration-PRESENTING.svg'
+          imageSide='left'
+        >
           <Carousel images={boardImages} />
         </Section>
-        <Section heading='Meet-ups we have had'>
+        <Section
+          heading='Meet-ups we have had'
+          imageSrc='/Illustration-OK.svg'
+          imageSide='right'
+        >
           <Carousel images={eventImages} />
         </Section>
         <Footer
-          imageUrl='/logos/Illustration-PEACE.svg'
-          logoUrl='/logos/Join-TEXT.svg'
-          innerLogoUrl='/logos/Join-LOGO.svg'
+          imageUrl='/Illustration-PEACE.svg'
+          logoUrl='/Join-TEXT.svg'
+          innerLogoUrl='/Join-LOGO.svg'
         />
       </header>
     </main>

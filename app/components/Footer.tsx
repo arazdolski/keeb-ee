@@ -17,7 +17,7 @@ const Footer: React.FC<FooterProps> = ({ logoUrl, innerLogoUrl, imageUrl }) => {
         </p>
         {imageUrl && <img src={imageUrl} alt='Peace sign' />}
       </div>
-      <div className='relative ml-4'>
+      <div className='relative ml-4 fixed'>
         <img src={logoUrl} alt='logo' className='h-40 w-40 slow-spin' />
         <a
           href='https://discord.gg/nax9Trt6zg'
