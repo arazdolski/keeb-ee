@@ -17,24 +17,30 @@ const Section: React.FC<SectionProps> = ({
   imageSide,
 }) => {
   return (
-    <div
-      className={`flex flex-col items-center justify-center pt-8 ${className}`}
-    >
+    <div className={`flex flex-col items-center w-full ${className}`}>
       <div
-        className={`flex flex-col md:flex-row items-center justify-center text-center ${
-          imageSide === 'right' ? 'md:flex-row-reverse' : ''
+        className={`flex items-start justify-center ${
+          imageSide === 'right' ? 'flex-row-reverse' : ''
         }`}
       >
         {imageSrc && (
-          <Image
-            src={imageSrc}
-            alt=''
-            width={1200}
-            height={800}
-            className='w-24 h-24 md:w-32 md:h-32 object-cover mx-auto md:mx-0 md:ml-8 md:mr-8'
-          />
+          <div
+            className={`relative w-20 md:w-32 z-10 p-2 ${
+              imageSide === 'right'
+                ? 'ml-[-50px] md:ml-[-50px]'
+                : 'mr-[-50px] md:mr-[-50px]'
+            }`}
+          >
+            <Image
+              src={imageSrc}
+              alt=''
+              width={64}
+              height={64}
+              className={`absolute md:w-32 md:h-32`}
+            />
+          </div>
         )}
-        <h2 className='text-lg md:text-3xl font-bold mb-8 uppercase md:-ml-8 whitespace-nowrap'>
+        <h2 className='text-lg md:text-4xl z-20 font-bold m-8 uppercase whitespace-nowrap'>
           {heading}
         </h2>
       </div>
