@@ -12,9 +12,9 @@ export default function Home() {
       <header>
         <Navbar></Navbar>
         <div className=" flex items-center justify-center h-auto flex-col md:flex-row md:pt-8 pt-4 pb-8">
-          <div className=" h-auto flex items-center justify-start text-center">
-            <div className="text-left md:text-center md:w-1/2 m-auto">
-              <p className="m-auto p-2 text-lg sm:text-2xl md:text-2xl lg:text-2xl  md:w-full">
+          <div className="h-auto flex items-center justify-start">
+            <div className="text-left md:w-1/2 m-auto">
+              <p className="m-auto p-2 text-lg sm:text-2xl md:text-2xl lg:text-2xl md:w-full text-left">
                 Our community revolves around passion for mechanical keyboards.{' '}
                 <br />
                 We build, share and design keebs, but it&apos;s mostly to make
