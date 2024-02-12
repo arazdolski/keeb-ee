@@ -6,6 +6,9 @@ import Carousel from './components/Carousel';
 import boardImages from './data/boardImages';
 import eventImages from './data/eventImages';
 
+// Disable Vercel Data Cache
+export const fetchCache = 'force-no-store';
+
 export default function Home() {
   return (
     <main>
