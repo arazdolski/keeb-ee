@@ -29,12 +29,15 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
               key={index}
               className="flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full "
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={1000}
-                height={600}
-              />
+              <div className="shadow-xl overflow-hidden">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={1000}
+                  height={600}
+                  className="rounded-xl"
+                />
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
