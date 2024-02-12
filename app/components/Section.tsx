@@ -19,16 +19,16 @@ const Section: React.FC<SectionProps> = ({
   return (
     <div className={`flex flex-col items-center w-full ${className} `}>
       <div
-        className={`flex items-start justify-center ${
+        className={`flex items-center justify-center ${
           imageSide === 'right' ? 'flex-row-reverse' : ''
         }`}
       >
         {imageSrc && (
           <div
-            className={`relative w-14 md:w-32 z-10 p-2 ${
+            className={`absolute w-14 md:w-32 z-10 p-2 ${
               imageSide === 'right'
-                ? 'ml-[-100px] md:ml-[-50px]'
-                : 'mr-[-100px] md:mr-[-50px]'
+                ? 'ml-[300px] md:ml-[400px]'
+                : 'mr-[300px] md:mr-[400px]'
             }`}
           >
             <Image
