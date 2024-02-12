@@ -27,14 +27,13 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className="flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full"
+              className="flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full "
             >
               <Image
                 src={image.src}
                 alt={image.alt}
-                className=" h-full sm:w-2/5"
-                width={1200}
-                height={800}
+                width={1000}
+                height={600}
               />
             </CarouselItem>
           ))}
