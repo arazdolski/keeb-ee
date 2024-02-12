@@ -33,7 +33,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  width={1000}
+                  width={800}
                   height={600}
                   className="rounded-xl"
                 />

@@ -33,12 +33,18 @@ export default function Home() {
           imageSrc="/Illustration-CLAP.svg"
           imageSide="right"
         >
-          <Image
-            src="/Keebuary-banner.png"
-            width={1200}
-            height={800}
-            alt="Banner image of the upcoming keeb.ee event"
-          />
+          <a
+            href="https://fb.me/e/4MwAyR3Yx"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/Keebuary-banner.png"
+              width={1200}
+              height={800}
+              alt="Banner image of the upcoming keeb.ee event"
+            />
+          </a>
         </Section>
 
         <Section
@@ -50,7 +56,7 @@ export default function Home() {
         </Section>
         <Section
           heading="Meet-ups we've had"
-          imageSrc="/Illustration-OK.svg"
+          imageSrc="/Illustration-LOVE.svg"
           imageSide="right"
         >
           <Carousel images={eventImages} />
