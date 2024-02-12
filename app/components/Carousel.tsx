@@ -1,12 +1,12 @@
-"use client";
-import * as React from "react";
-import Autoplay from "embla-carousel-autoplay";
+'use client';
+import * as React from 'react';
+import Autoplay from 'embla-carousel-autoplay';
 import {
   Carousel as UICarousel,
   CarouselContent,
   CarouselItem,
-} from "@/components/ui/carousel";
-import Image from "next/image";
+} from '@/components/ui/carousel';
+import Image from 'next/image';
 
 interface CarouselComponentProps {
   images: { src: string; alt: string }[];
@@ -32,7 +32,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
               <Image
                 src={image.src}
                 alt={image.alt}
-                className="w-3/4 h-1/2 sm:w-1/2"
+                className=" h-full sm:w-2/5"
                 width={1200}
                 height={800}
               />

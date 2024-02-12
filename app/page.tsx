@@ -1,10 +1,10 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Section from "./components/Section";
-import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
-import boardImages from "./data/boardImages";
-import eventImages from "./data/eventImages";
+import Image from 'next/image';
+import Navbar from './components/Navbar';
+import Section from './components/Section';
+import Footer from './components/Footer';
+import Carousel from './components/Carousel';
+import boardImages from './data/boardImages';
+import eventImages from './data/eventImages';
 
 export default function Home() {
   return (
@@ -15,9 +15,9 @@ export default function Home() {
           <div className=" h-auto flex items-center justify-start text-center">
             <div className="text-left md:text-center md:w-1/2 m-auto">
               <p className="m-auto p-2 text-xl sm:text-2xl md:text-2xl lg:text-2xl  md:w-full">
-                Our community revolves around a passion for mechanical
-                keyboards. <br />
-                We build, share, design keebs, but it&apos;s mostly to make
+                Our community revolves around passion for mechanical keyboards.{' '}
+                <br />
+                We build, share and design keebs, but it&apos;s mostly to make
                 friends and goof around. <br />
                 Each of us has a unique vision for how a keyboard should look
                 and feel.
