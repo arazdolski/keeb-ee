@@ -23,7 +23,7 @@ export default function Home() {
                 and feel.
                 <br />
                 <br />
-                Sending love from chilly Estonia!
+                Sending love from chilly Estonia! &#60;3
               </p>
             </div>
           </div>
