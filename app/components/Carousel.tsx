@@ -9,7 +9,7 @@ import {
 import Image from 'next/image';
 
 interface CarouselComponentProps {
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; caption?: string }[];
 }
 
 const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
@@ -18,7 +18,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
   );
 
   return (
-    <div className="flex justify-center items-center">
+    <div className='flex justify-center items-center'>
       <UICarousel
         plugins={[plugin.current]}
         onMouseLeave={plugin.current.reset}
@@ -27,16 +27,19 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className="flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full "
+              className='flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full '
             >
-              <div className="shadow-xl overflow-hidden">
+              <div className='relative shadow-xl overflow-hidden'>
                 <Image
                   src={image.src}
                   alt={image.alt}
                   width={800}
                   height={600}
-                  className="rounded-xl"
+                  className='rounded-xl'
                 />
+                <p className='absolute bottom-0 rounded-xl bg-black bg-opacity-50 text-white p-2 text-sm sm:text-base'>
+                  {image.caption}
+                </p>
               </div>
             </CarouselItem>
           ))}
