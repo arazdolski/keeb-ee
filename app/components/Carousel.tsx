@@ -37,9 +37,11 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
                   height={600}
                   className='rounded-xl'
                 />
-                <p className='absolute bottom-0 rounded-xl bg-black bg-opacity-50 text-white p-2 text-sm sm:text-base'>
-                  {image.caption}
-                </p>
+                {image.caption && (
+                  <p className='absolute bottom-0 rounded-xl bg-black bg-opacity-50 text-white p-2 text-sm sm:text-base'>
+                    {image.caption}
+                  </p>
+                )}
               </div>
             </CarouselItem>
           ))}
