@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
                     Welcome to
                   </p>
                   <Image
-                    src='/Keeb-logo-Horizontal-VOID.svg'
+                    src='/logos/Keeb-logo-Horizontal-VOID.svg'
                     width={250}
                     height={250}
                     alt='keeb.ee logo'

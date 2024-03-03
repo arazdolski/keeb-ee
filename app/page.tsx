@@ -30,16 +30,16 @@ export default function Home() {
         </div>
         <Section
           heading='Upcoming events'
-          imageSrc='/Illustration-CLAP.svg'
+          imageSrc='/logos/Illustration-CLAP.svg'
           imageSide='right'
         >
           <a
-            href='https://fb.me/e/4MwAyR3Yx'
+            href='https://fb.me/e/6voWvbQmr'
             target='_blank'
             rel='noopener noreferrer'
           >
             <Image
-              src='/Keebuary-banner.png'
+              src='/banners/pixo_banner.jpg'
               width={1200}
               height={800}
               alt='Banner image of the upcoming keeb.ee event'
@@ -48,22 +48,22 @@ export default function Home() {
         </Section>
         <Section
           heading="Keebs we've built"
-          imageSrc='/Illustration-PRESENTING.svg'
+          imageSrc='/logos/Illustration-PRESENTING.svg'
           imageSide='left'
         >
           <Carousel images={boardImages} />
         </Section>
         <Section
           heading="Meet-ups we've had"
-          imageSrc='/Illustration-LOVE.svg'
+          imageSrc='/logos/Illustration-LOVE.svg'
           imageSide='right'
         >
           <Carousel images={eventImages} />
         </Section>
         <Footer
-          imageUrl='/Illustration-PEACE.svg'
-          logoUrl='/Join-TEXT.svg'
-          innerLogoUrl='/Join-LOGO.svg'
+          imageUrl='/logos/Illustration-PEACE.svg'
+          logoUrl='/logos/Join-TEXT.svg'
+          innerLogoUrl='/logos/Join-LOGO.svg'
         />
       </header>
     </main>
