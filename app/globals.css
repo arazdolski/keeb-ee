@@ -18,12 +18,12 @@
 
 @font-face {
   font-family: 'Sligoil'; /* Define the custom font name */
-  src: url('/Sligoil-Micro.woff2') format('woff2'); /* Point to the font file in your project */
+  src: url('/fonts/Sligoil-Micro.woff2') format('woff2'); /* Point to the font file in your project */
 }
 
 @font-face {
   font-family: 'Chaney'; /* Define the second custom font name */
-  src: url('/chaney-ultraextended-webfont.woff2') format('woff2'); /* Point to the second font file in your project */
+  src: url('/fonts/chaney-ultraextended-webfont.woff2') format('woff2'); /* Point to the second font file in your project */
 }
 
 @keyframes slow-spin {
