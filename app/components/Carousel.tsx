@@ -18,7 +18,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
   );
 
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center w-full'>
       <UICarousel
         plugins={[plugin.current]}
         onMouseLeave={plugin.current.reset}
@@ -27,7 +27,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
           {images.map((image, index) => (
             <CarouselItem
               key={index}
-              className='flex justify-center items-center sm:w-1/2 object-scale-down h-1/2 w-full '
+              className='flex justify-center items-center  sm:w-1/2 object-scale-down h-1/2  '
             >
               <div className='relative shadow-xl overflow-hidden'>
                 <Image

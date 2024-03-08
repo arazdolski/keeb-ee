@@ -37,6 +37,7 @@ export default function Home() {
             href='https://fb.me/e/6voWvbQmr'
             target='_blank'
             rel='noopener noreferrer'
+            title='Upcoming keeb.ee event'
           >
             <Image
               src='/banners/pixo_banner.jpg'
