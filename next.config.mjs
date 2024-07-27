@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['keeb.ee'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'keeb.ee',
+        port: '',
+      },
+    ],
   },
 };
 
