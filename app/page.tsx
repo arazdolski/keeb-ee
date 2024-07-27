@@ -29,25 +29,6 @@ export default function Home() {
           </div>
         </div>
         <Section
-          heading='Upcoming events'
-          imageSrc='/logos/Illustration-CLAP.svg'
-          imageSide='right'
-        >
-          <a
-            href='https://fb.me/e/6voWvbQmr'
-            target='_blank'
-            rel='noopener noreferrer'
-            title='Upcoming keeb.ee event'
-          >
-            <Image
-              src='/banners/pixo_banner.jpg'
-              width={1200}
-              height={800}
-              alt='Banner image of the upcoming keeb.ee event'
-            />
-          </a>
-        </Section>
-        <Section
           heading="Keebs we've built"
           imageSrc='/logos/Illustration-PRESENTING.svg'
           imageSide='left'
