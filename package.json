@@ -19,7 +19,7 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "shadcn-ui": "^0.9.5",
-    "sharp": "^0.33.2",
+    "sharp": "^0.34.3",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7"
   },
