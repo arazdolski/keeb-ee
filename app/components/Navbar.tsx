@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
         <div className='flex justify-between h-16'>
           <div className='flex sm:justify-center w-full'>
             {/* Logo */}
-            <div className='flex-shrink-0 flex items-center align-left sm:absolute sm:left-1/2 sm:-translate-x-1/2'>
+            <div className='shrink-0 flex items-center align-left sm:absolute sm:left-1/2 sm:-translate-x-1/2'>
               <Link href='/'>
                 <div className='pt-2 flex flex-col md:flex-row items-start sm:items-center'>
                   <p className='pt-4 pl-2 sm:pt-0 sm:pr-1 text-sm sm:text-base md:text-xl lg:text-2xl'>
